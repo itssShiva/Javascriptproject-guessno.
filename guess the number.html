@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let random=Math.floor(Math.random()*101)
+
+let chance=0;
+let num;
+while(num!=random)
+{
+num=prompt("Enter the number");
+
+if(num<random)
+{
+  console.log("number is greater than "+num);
+}
+ else if(num>random)
+{
+    console.log(" number is less than " +num);
+}
+else if (num==random)
+{
+  
+    console.log("your guess is right");
+    console.log(random);
+    console.log("your chances of guessing it right: "+(chance+1));
+ }
+ chance++;
+
+}
+
+// let x=Math.floor(Math.random()*(25-15)) + 15;------ye kisi bhi do value ke beech mein number generate krke dega ,,ye particular statement jo h wo 15 se 25 ke beech mein number generate krke dega pr 25 include ni hoga
+
+    </script>
+  <p>js</p>  
+</body>
+</html>
